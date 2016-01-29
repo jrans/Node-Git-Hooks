@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+require('child_process').exec(
+  "git branch | grep '*'",
+  function (err, stdout) {
+    if (err) {
+      process.abort();
+    } else {
+      var name  = stdout.replace('* ','').replace('\n','');
+
+      if (name === 'master') {
+        console.log('Please don\'t push to master');
+        process.abort();
+      }
+    }
+  }
+)

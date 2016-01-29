@@ -1,0 +1,30 @@
+{
+  "name": "node-git-hooks",
+  "version": "1.0.0",
+  "description": "Examples of using node to write git hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "git:init": "node git/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrans/Node-Git-Hooks.git"
+  },
+  "keywords": [
+    "Node",
+    "Git",
+    "Hooks",
+    "pre-commit",
+    "pre-push",
+    "personalisation",
+    "happy",
+    "developer"
+  ],
+  "author": "jrans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrans/Node-Git-Hooks/issues"
+  },
+  "homepage": "https://github.com/jrans/Node-Git-Hooks#readme"
+}
